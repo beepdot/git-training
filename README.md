@@ -109,7 +109,8 @@ git add .
 git status
 git restore --staged README.md
 git restore README.md
-git commit -m "feat: adding feature-2"
+git commit -m "feat: adding feature-1"
+git commit --amend -m "feat: adding feature-2"
 git push origin feature-2
 ```
 - Lets add a few commits and reset back to an older commit
@@ -295,7 +296,7 @@ alias ga='git add'
 alias gb='git branch'
 alias gc='git checkout'
 alias gcp="git cherry-pick"
-alias gca='git commit --amend'
+alias gca='git commit --amend  -S -s -m'
 alias gcm='git commit -S -s -m'
 alias gd='git diff'
 alias gfa='git fetch --all'
