@@ -53,7 +53,7 @@ git push origin main
 ```
 - Fork the repo https://github.com/keshavprasadms/git-training and clone the forked repo (replace the value `YOUR_USER_NAME` with your actual user name)
 ```
-git clone https://github.com/YOUR_USER_NAME/git-training
+git clone https://github.com/YOUR_USER_NAME/random-git-repo
 
 # See clone to a directory
 # See clone and checkout a branch
