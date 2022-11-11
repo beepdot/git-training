@@ -221,7 +221,7 @@ git branch
 git checkout -b missing-commit
 git push origin missing-commit:main
 ``` 
-- Lets see how we can pick some specific commits and also look at tagging
+- Lets see how we can pick some specific commits
 ```
 git checkout -b branch1
 git checkout -b branch2
@@ -235,7 +235,22 @@ git cherry-pick FIRST_NEW_COMMIT_HASH
 # Lets also take rest of the commits
 
 git cherry-pick FIRST_NEW_COMMIT_HASH..LAST_NEW_COMMIT_HASH
+```
+- Lets see some interactive rebase
+```
+git checkout branch2
+git push origin branch
+git branch --set-upstream-to=origin/branch2 branch2
+git rebase -i
+git log --oneline
+git rebase -i HEAD~5
 
+# Use pick for first commits
+# Use squash for all other commits
+# Rewrite you commit message
+```
+- Lets create some tags
+```
 git checkout main
 git log --oneline
 git tag v1.0.0
